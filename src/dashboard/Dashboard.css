@@ -1,3 +1,24 @@
 .dashboard{
+  overflow-x: auto;
+}
 
+.add-list {
+  display: flex;
+  width: 300px;
+  background: #eeeeee;
+  border-radius: 4px;
+  height: 30px;
+  text-align: left;
+  align-items: center;
+  border: 1px solid;
+  cursor: pointer;
+}
+
+.add-list > i {
+  font-size: 25px;
+  padding-left: 10px;
+}
+
+.add-list > span {
+  padding-left: 10px;
 }
