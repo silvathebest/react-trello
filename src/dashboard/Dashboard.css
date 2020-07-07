@@ -1,38 +1,56 @@
-.dashboard{
-  overflow-x: auto;
-  height: 100%;
+.dashboard {
+    overflow-x: auto;
+    height: 100%;
 }
 
 .add-list {
-  display: flex;
-  width: 300px;
-  background: #eeeeee;
-  border-radius: 4px;
-  height: 30px;
-  text-align: left;
-  align-items: center;
-  border: 1px solid;
-  cursor: pointer;
+    display: flex;
+    width: 300px;
+    background: #eeeeee;
+    border-radius: 4px;
+    height: 30px;
+    text-align: left;
+    align-items: center;
+    border: 1px solid;
+    cursor: pointer;
+    margin: 10px;
 }
 
 .add-list > i {
-  font-size: 25px;
-  padding-left: 10px;
+    font-size: 25px;
+    padding-left: 10px;
 }
 
 .add-list > span {
-  padding-left: 10px;
+    padding-left: 10px;
 }
 
 .opened-add-list {
-  background: #282c34;
-  display: flex;
-  flex-direction: column;
-  width: 300px;
-  border-radius: 4px;
+    background: #63a517;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border-radius: 4px;
+    margin: 10px;
 }
 
 .opened-add-list > input {
-  margin: 5px;
-  font-size: 15px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.opened-add-list > input:focus {
+    outline: none;
+}
+
+.opened-add-list > div > button {
+    margin: 5px;
+}
+
+.close-add-list {
+    background: none;
+    color: red;
+    border: none;
+    border-radius: 4px;
+    float: right;
 }
