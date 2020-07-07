@@ -1,19 +1,24 @@
 .dashboard {
+    display: flex;
+    flex-direction: row;
     overflow-x: auto;
     height: 100%;
 }
 
-.add-list {
-    display: flex;
+.list {
     width: 300px;
     background: #eeeeee;
     border-radius: 4px;
-    height: 30px;
-    text-align: left;
-    align-items: center;
-    border: 1px solid;
     cursor: pointer;
     margin: 10px;
+    border: 1px solid;
+}
+
+.add-list {
+    display: flex;
+    text-align: left;
+    height: 30px;
+    align-items: center;
 }
 
 .add-list > i {
@@ -36,7 +41,8 @@
 
 .opened-add-list > input {
     margin: 10px;
-    font-size: 20px;
+    font-size: 14px;
+    height: 20px;
 }
 
 .opened-add-list > input:focus {
