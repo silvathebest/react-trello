@@ -9,14 +9,17 @@ export default function Dashboard() {
     setAddList({ isOpen: true })
   }
 
-  function closeAddList(event) {
-    console.log(event)
+  function clickDashboard(event) {
+    event.target.classList.contains('dashboard') && closeAddList()
+  }
+
+  function closeAddList() {
     setAddList({ isOpen: false })
   }
 
   return (
-    <div className='dashboard' onClick={ configAddList.isOpen ? closeAddList : () => {} }>
-      <AddList config={ configAddList } open={ openAddList }/>
+    <div className='dashboard' onClick={ configAddList.isOpen ? clickDashboard : () => {} }>
+      <AddList config={ configAddList } open={ openAddList } close={ closeAddList }/>
     </div>
   );
 }

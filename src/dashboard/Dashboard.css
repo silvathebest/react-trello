@@ -1,5 +1,6 @@
 .dashboard{
   overflow-x: auto;
+  height: 100%;
 }
 
 .add-list {
@@ -21,4 +22,17 @@
 
 .add-list > span {
   padding-left: 10px;
+}
+
+.opened-add-list {
+  background: #282c34;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  border-radius: 4px;
+}
+
+.opened-add-list > input {
+  margin: 5px;
+  font-size: 15px;
 }
